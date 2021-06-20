@@ -1,0 +1,651 @@
+<!--
+
+  Project :  UI/UX Design Facebook (incomplete)
+  Author : Dont Knew (Sajid Ali)
+  Project Complete : in three weeks
+  Project Feature : 1. That is only static design facebook page
+                    2. And not dynamic page created  becuase , I have no time :(
+
+  Thanks for read :|
+
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Facebook App</title>
+</head>
+<body>
+  <div class="Facebook-Full-Body fbbody">
+  <!-- facebook-header-menu -->
+  <div id="showmenu">
+    <div class="header">
+      <div class="sub-header"> 
+        <div class="fb-home-log">
+          <img src='fbicons/facebook.svg' width='130' class="facebook">
+          </div>
+        <div class="bar-search">
+          <img src='fbicons/search.svg' width="25px" height="30px" class="search">
+          <div class="svg tablinks"  onclick="openfbTab('Fbmenubar'), hideHeader()"><img src='fbicons/menu.svg' width="25px" height="30px" class="bar"></div>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="header-icon">
+          <div class="svg tablinks"  onclick="openfbTab('Fbtimeline')" id="defaultOpen"><img src='/fbicons/home.svg' width="30px" height="30px"></div>
+          <div class="svg tablinks" onclick="openfbTab('Fbfriends')"><img src='/fbicons/friends.svg' width="30px" height="30px"></div>
+          <div class="svg tablinks" onclick="openfbTab('Fbmessanger')"><img src='/fbicons/message.svg' width="30px" height="30px"></div>
+          <div class="svg tablinks" onclick="openfbTab('Fbgroup')"><img src='/fbicons/group.svg' width="27px" height="27px"></div> 
+          <div class="svg tablinks" onclick="openfbTab('Fbnotification')"><img src='/fbicons/notification.svg' width="30px" height="30px"></div>
+          <div class="svg tablinks" onclick="openfbTab('Fbvideos')"><img src='/fbicons/video.svg' width="30px" height="30px"></div>  
+        </div>
+      </div><!-- class= tab > -->
+    </div>
+  </div>
+
+  <!-- Start fb-timeline -->
+  <div class="tabcontent" id="Fbtimeline">
+    <div class="timeline-header"> <!-- timeline post-->
+      <img src="image/profile.jpg" width="50px" height="50px" class="timeline-image"> 
+      <div class="active-badge"></div>
+      <span> Write something here...</span><br>
+      <span style="font-size:14px;"> यहाँ कुछ लिखो...</span>
+      <img src='/fbicons/image.svg' width="27px" height="27px" class="image-icon">
+    </div>
+   <div class="timeline-footer">
+      <div><img src='/fbicons/edit.svg' width="18px" height="25px"><span class="footer-icon"> Text</span></div>
+      <div><img src='/fbicons/livevideo.svg' width="18px" height="26px"><span class="footer-icon">  Live Video</span></div>
+      <div><img src='/fbicons/location.svg' width="13x" height="25px"><span class="footer-icon">  Location</span> </div>
+    </div><!-- End timeline post-->
+
+  <!-- Start stories-->
+  <div class="stories">
+    <div class="stories-header">
+      <span style="font-weight:bolder;color:black;">Stories</span>
+      <span><img src='/fbicons/archive.svg' width="15px" height="15px"><span style="position: relative; top:-2px;"> Your archive</span></span>
+    </div>
+    <div class="stories-footer">
+      <div> <img src="image/profile.jpg" alt="" class="stroies-image" width="80px" height="80px"><div><img src='/fbicons/plus.svg' width="25px" height="25px" style="position: relative; left:28px; top:-18px;"> </div> </div>
+      <div> <img src="image/image1.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image2.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image3.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image4.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image5.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image6.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image7.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+      <div><img src="image/image8.jpg" alt="" class="stroies-image" width="80px" height="100px"></div>
+    </div>
+    <div class="btn-all-stories">
+      <div><img src='/fbicons/stories.svg' width="20px" height="20px"><span class="footer-icon"> View All Stroies</span></div>
+    </div>
+  </div>
+  <!-- End  stories-->
+  <div class="timeline-post">
+    <div class="post1">
+      <div class="profile-post-name">
+        <img src="image/user1.jpg" width="45px" height="45px" class="post-profile"> 
+        <strong class="profile-name" style="color:red">  ( Dont Knew )</strong>
+        <span style="position:relative; top:-12px;right:102px;color:rgb(136, 125, 111);">
+        <small class="post-date" >18 Jun 2021 </small>
+        <span style="position: relative;top:-4px;">.</span>
+        <img src='/fbicons/earth.svg' width="12px" height="12px" class="earth-icon" style="position: relative; top:2px;">
+      </div>
+      <div class="post-menu">
+        <img src='/fbicons/three-dot.svg' width="20px" height="20px" class="three-dot" style="position: relative; top:6px; right:5px;">
+      </div>
+    </div>
+    <!-- Post Body-->
+    <div class="post-text">
+      <p> That is my  precious worklasj;lfdj;alsdjf;lasj;lfjas;lfdj;lasjf;lasjf;ljas;lfjas;lfj;lk</p>
+      <p> I Hope, you  will like gys & upvote  :) </p>
+      <p> ok by gys see you to next project.. </p><br>
+    </div>
+    <!-- End Post Body-->
+    <!-- Start Like & comment-->
+      <div class="reactors">
+        <div class="reactor-icon">
+          <img src='/fbicons/love.svg'  class="love-icon">
+          <img src='/fbicons/wow.svg'  class="wow-icon">
+            <img src='/fbicons/haha.svg'  class="haha-icon">
+        </div>
+        <span>364K</span>
+      </div>
+    <div class="post-footer">
+      <div class="btn-post like-btn"><img src='/fbicons/like.svg' class="like-icon"><span>364K</span></div>
+      <div class="btn-post comment-btn"><img src='/fbicons/comment.svg' class="comment-icon" ><span>64K</span></div>
+      <div class="btn-post share-btn"><img src='/fbicons/share.svg' class="share-icon"><span>15K</span></div>
+    </div>
+    <!-- End Like & comment-->
+  </div>
+  </div><!-- End fb-timeline -->
+
+  <!-- Start fb-friends -->
+  <div class="tabcontent" id="Fbfriends">
+<div class="friend-Request" style="margin-top:80px;width: 100%;height: auto;background-color:white;padding-bottom:15px;">
+<div class="sug-all-fr">
+    <div class="btn-fr"> Suggestions</div>
+    <div class="btn-fr">All Friends</div>
+  </div>
+  <div class="fr-request">
+      <span><strong>Friend requests</strong></span>
+      <span style="float:right;color:blue;margin-top:-8px;">See All</span>
+    </div>
+      <div class="friend-box">
+          <img src="image/rq1.jpg" alt="rq1" width="80px" height="80px" class="fr-image">
+          <div class="fr-name-time">
+              <span class="fr-name">Karishma Kashyap</span>
+              <span class="fr-time">11h</span>
+          </div>
+          <div class="fr-rq-btn">
+              <input type="button" value="Confirm" class="fr-confirm-btn">
+              <input type="button" value="Delete" class="fr-delete-btn">
+          </div>
+          </div>
+          <div class="friend-box">
+          <img src="image/rq1.jpg" alt="rq1" width="80px" height="80px" class="fr-image">
+          <div class="fr-name-time">
+              <span class="fr-name">Karishma Kashyap</span>
+              <span class="fr-time">11h</span>
+          </div>
+          <div class="fr-rq-btn">
+              <input type="button" value="Confirm" class="fr-confirm-btn">
+              <input type="button" value="Delete" class="fr-delete-btn">
+          </div>
+          </div>
+          <div class="fr-rq-footer">
+              <input type="button" value="See All" class="see-all-btn">
+          </div>       
+          <div class="fr-text">
+            <p>People may you know</p>
+          </div>
+          <!-- Add FriendContent -->
+          <div class="friend-box">
+          <img src="image/image4.jpg" alt="rq1" width="80px" height="80px" class="fr-image">
+          <div class="fr-name-time">
+              <span class="fr-name">Karishma Kashyap</span>
+              <span class="fr-time">5m</span>
+          </div>
+          <div class="fr-rq-btn">
+              <input type="button" value="Add Friend" class="fr-confirm-btn">
+              <input type="button" value="Remove" class="fr-delete-btn">
+          </div>
+          </div>
+          <div class="friend-box">
+          <img src="image/image8.jpg" alt="rq1" width="80px" height="80px" class="fr-image">
+          <div class="fr-name-time">
+              <span class="fr-name">Sharukh Khan </span>
+              <span class="fr-time">5h</span>
+          </div>
+          <div class="fr-rq-btn">
+              <input type="button" value="Add Friend" class="fr-confirm-btn">
+              <input type="button" value="Remove" class="fr-delete-btn">
+          </div>
+          </div>
+      </div>
+  </div> 
+  <!-- End fb-friends -->
+    
+  <!-- Start fb-group-->
+  <div class="tabcontent" id="Fbgroup"> 
+    <div class="fb-group"> 
+        <div class="group-header">
+            <span>Group</span>
+            <span><img src='/fbicons/search.svg' width="25px" height="30px" class="search"> </span>
+        </div>
+
+        <div class="group-header-menu">
+            <h4>Groups</h4>
+            <h4>Discover</h4>
+            <h4>Create Group</h4>
+            <h4>Inviations</h4>
+        </div>
+
+        <div class="group-list"> 
+            <h3>Your groups</h3>
+            
+            <div class="group1">
+                <img src="image/fr3.jpg" alt="" width="40px;" height="40px" class="group-profile-image" style="border-radius:25%;">
+                <div class="group-name-text">
+                    <span>Web Design and Development</span>
+                    <span><div class="post-dot"></div>Mark Zukerburger posted 2 photos.</span>
+                </div>
+            </div>
+
+            <div class="group1">
+                <img src="image/fr3.jpg" alt="" width="40px;" height="40px" class="group-profile-image" style="border-radius:25%;">
+                <div class="group-name-text">
+                    <span>Web Design and Development</span>
+                    <span><div class="post-dot"></div>Mark Zukerburger posted 2 photos.</span>
+                </div>
+            </div>
+
+            <div class="group1">
+                <img src="image/fr3.jpg" alt="" width="40px;" height="40px" class="group-profile-image" style="border-radius:25%;">
+                <div class="group-name-text">
+                    <span>Web Design and Development</span>
+                    <span><div class="post-dot"></div>Mark Zukerburger posted 2 photos.</span>
+                </div>
+            </div>
+
+            <div class="group1"><!-- See More  -->
+                <img src="image/fr3.jpg" alt="" width="40px;" height="40px" class="group-profile-image" style="border-radius:25%;">
+                <div class="group-name-text">
+                    <span>Web Design and Development</span>
+                    <span><div class="post-dot"></div>Mark Zukerburger posted 2 photos.</span>
+                </div>
+            </div>
+
+            <div class="group1">
+                <img src="image/fr3.jpg" alt="" width="40px;" height="40px" class="group-profile-image" style="border-radius:25%;">
+                <div class="group-name-text">
+                    <span>Web Design and Development</span>
+                    <span><div class="post-dot"></div>Mark Zukerburger posted 2 photos.</span>
+                </div>
+            </div>
+        </div> <!-- group-list1-->
+
+        <div class="group-see-more-btn">
+            <span onclick="group_list_expand()" id="group_list_expand">See More<img src='/fbicons/arrow-down.svg' width="20px" height="20px" class="search"></span>
+        </div>
+    </div> 
+
+    <div class="group-section-post"> <!-- Group Post Section -->
+
+        <div class="group-post1">
+          <div class="group-profile-post-name">
+            <img src="image/user1.jpg" width="45px" height="45px" class="group-profile-post"> 
+            <strong class="group-profile-name"> Adarsh Yadav <img src='/fbicons/arrow-right.svg' width="30px" height="20px" class="group-love-icon" style="position: relative;right:10px;top:5px;"><span style="">Web Developer and Design </span></strong><br>
+            <span>
+              <small class="group-post-date" >30 Oct 2002 </small>
+          </div>
+        <div class="group-post-menu">
+          <img src='/fbicons/three-dot.svg' width="20px" height="20px" class="group-three-dot" style="position: relative; top:12px; right:-44px;">
+        </div>
+      </div>
+
+      <div class="group-post-text"><!-- Post Body-->
+        <p> Hello, gys I am new here in your facebook</p>
+        <p> I Hope, I will feel better :) </p>
+        <p> ok by gys see you tommrrow </p><br>
+      </div><!-- End Post Body-->
+  <!-- Start Like & comment-->
+      <div class="group-reactors">
+        <div class="group-reactor-icon">
+          <img src='/fbicons/love.svg'  class="love-icon">
+            <img src='/fbicons/wow.svg'  class="wow-icon">
+            <img src='/fbicons/haha.svg'  class="haha-icon">
+        </div>
+        <span>364K</span>
+      </div>
+    <div class="group-post-footer">
+      <div class="btn-post like-btn"><img src='/fbicons/like.svg' class="like-icon"><span>364K</span></div>
+      <div class="btn-post comment-btn"><img src='/fbicons/comment.svg' class="comment-icon" ><span>64K</span></div>
+      <div class="btn-post share-btn"><img src='/fbicons/share.svg' class="share-icon"><span>15K</span></div>
+    </div>
+    <!-- End Like & comment-->
+    </div>  
+  </div>
+   <!-- End fb-group-->
+
+    <!-- Start fb Messanger-->
+  <div class="tabcontent" id="Fbmessanger">
+    <div class="message-header"> 
+      <div class="chat-profile-header">
+        <div> <img src="image/profile.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><div><img src='/fbicons/plus.svg' width="15px" height="15px" style="position: relative; left:35px; top:-22px;"> </div> </div>
+        <div> <img src="image/image1.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Karishma</small></div>
+        <div><img src="image/image2.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name"> Kanika</small></div>
+        <div><img src="image/image3.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Reshma</small></div>
+        <div><img src="image/image4.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Rahul</small></div>
+        <div><img src="image/image5.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Pinki</small></div>
+        <div><img src="image/image6.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Shahzada</small></div>
+        <div><img src="image/image7.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Anjana</small></div>
+        <div><img src="image/image8.jpg" alt="" class="chat-profile-image" width="50px" height="50px"><small class="chat-profile-name">Rahul</small></div>
+      </div>
+    </div>
+    <div class="message-body"> <!-- less div-->
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+      <div class="chat-1">
+        <div class="chat-front"> <img src="image/image2.jpg" alt="" class="chat-profile-image1" width="40px" height="40px"><span class="chat-profile-name1">Kanika Verma</span><br><span class="chat-profile-message">Ok Dude! see you latter...</span></div>
+        <div class="time-badge">
+          <span class="hour-mint">5m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End fb Messanger-->
+
+    <!-- Start fb-notification-->
+  <div class="tabcontent" id="Fbnotification">
+    <div class="fb-notification">
+      <div class="notification-header">
+        <span style="color:black">Notification</span>
+        <span><img src='/fbicons/search.svg' width="25px" height="30px" class="search"> </span>
+    </div>
+    </div>
+    <div class="notification-sub-header">
+      <input type="button" value="Mark All as Read" class="mark-all-read">
+    </div>
+  <!-- Start Notification Body -->
+  <div class="fb-notification-body"> 
+      <div class="header-text-new"><strong>New</strong></div>
+      <div class="notification-body">
+        <div class="notification-items">
+          <div class="notification-image"><img src="image/user2.jpg" alt="group-or-user" srcset="" width="50px" height="50px" ></div>
+          <div><strong>Shahid Kapoor</strong> reacted to a post you are tagged in:"Today is my first roza.." <br><img src='/fbicons/haha.svg' width="14px" height="14px" class="comment-icon" > <span>5 mintute ago</span></div>
+          <div class="notification-three-dot"><img src='/fbicons/three-dot.svg' width="15px" height="15px" class="notification-three-dot"></div>
+        </div>
+      </div>
+      <div class="notification-body">
+        <div class="notification-items">
+          <div class="notification-image"><img src="image/image6.jpg" alt="group-or-user" srcset="" width="50px" height="50px" ></div>
+          <div><strong>Rani Mukherji and Salman Khan</strong>  others 199k reacted to a post you are tagged in:"Good night ..." <br><img src='/fbicons/wow.svg' width="14px" height="14px" class="comment-icon" > <span>5 mintute ago</span></div>
+          <div class="notification-three-dot"><img src='/fbicons/three-dot.svg' width="15px" height="15px" class="notification-three-dot"></div>
+        </div>
+      </div>
+      <div class="notification-body">
+        <div class="notification-items">
+          <div class="notification-image"><img src="image/image3.jpg" alt="group-or-user" srcset="" width="50px" height="50px" ></div>
+          <div><strong>Katrina Kaif</strong> commentend on your post. <br><img src='/fbicons/comment-fill.svg' width="14px" height="14px" class="comment-icon" > <span>5 mintute ago</span></div>
+          <div class="notification-three-dot"><img src='/fbicons/three-dot.svg' width="15px" height="15px" class="notification-three-dot"></div>
+        </div>
+      </div>
+      <div class="notification-body">
+        <div class="notification-items">
+          <div class="notification-image"><img src="image/profile.jpg" alt="group-or-user" srcset="" width="50px" height="50px" ></div>
+          <div><strong>Strenger Larka, Mark Zuku and Wairna Khan Wari </strong> reacted to your post:"Best Programmer Table of..." <br><img src='/fbicons/love.svg' width="14px" height="14px" class="comment-icon" > <span>5 mintute ago</span></div>
+          <div class="notification-three-dot"><img src='/fbicons/three-dot.svg' width="15px" height="15px" class="notification-three-dot"></div>
+        </div>
+      </div>
+      <div class="notification-body">
+        <div class="notification-items">
+          <div class="notification-image"><img src="image/user1.jpg" alt="group-or-user" srcset="" width="50px" height="50px" ></div>
+          <div><strong>Adarsh Yadav, Shardha Kapoor and Justin </strong> and others 145k commented to your post:"Ha mein wahi hon..." <br><img src='/fbicons/comment-fill.svg' width="14px" height="14px" class="comment-icon" > <span>5 mintute ago</span></div>
+          <div class="notification-three-dot"><img src='/fbicons/three-dot.svg' width="15px" height="15px" class="notification-three-dot"></div>
+        </div>
+      </div>
+      <div class="notification-body">
+        <div class="notification-items">
+          <div class="notification-image"><img src="image/user2.jpg" alt="group-or-user" srcset="" width="50px" height="50px" ></div>
+          <div><strong>Alveera Hassan and Siddharth Bai </strong> commented to your post:"Ha mein wahi hon..." <br><img src='/fbicons/care.svg' width="14px" height="14px" class="comment-icon" > <span>5 mintute ago</span></div>
+          <div class="notification-three-dot"><img src='/fbicons/three-dot.svg' width="15px" height="15px" class="notification-three-dot"></div>
+        </div>
+      </div>
+  </div> <!-- End Notification Body -->
+  </div>
+  <!-- End fb-notification-->
+
+  <!-- Start fb-videos -->
+  <div class="tabcontent" id="Fbvideos">
+    <div class="fb-video">
+        <div class="video-header">
+            <span style="color:black">Videos</span>
+            <span><img src='/fbicons/search.svg' width="25px" height="30px" class="search"> </span>
+        </div>
+    </div>
+    <div class="fb-video-header">
+        <div class="video-header1">
+            <span>Play vidoes automatically</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div> <!-- End fb-video-header-->
+    <div class="video-menu-header"> <!-- Start Video-menu-bar --> 
+        <div class="menu-header"> 
+            <div>Home</div>
+            <div>Live</div>
+            <div>Music</div>
+            <div>Gaming</div>
+            <div>Following</div>
+            <div>Saved</div>
+        </div>
+    </div> <!-- End Video-menu-bar -->
+
+    <div class="video-section-post">
+        <div class="video-post1">
+
+          <div class="video-profile-post-name">
+            <img src="image/t-series.jpg" width="45px" height="45px" class="video-profile-post"> 
+            <strong class="video-profile-name">T-Seires <img src='/fbicons/dot.svg' width="10px" height="5px" class="video-love-icon"><span style="color:#1877F2;">Follow </span></strong><br>
+            <span>
+              <small class="video-post-date" >30 Oct 2002 </small>
+              </span>
+          </div>
+
+        <div class="video-post-menu">
+          <img src='/fbicons/three-dot.svg' width="20px" height="20px" class="video-three-dot" style="position: relative; top:12px; right:-44px;">
+        </div>
+      </div>  <!-- end video-post1 --> 
+
+      <!-- <div id="ytrandomvideo"></div> -->
+      <video controls class="video" width="100%;" height="auto;" id="video"  poster="image/image3.jpg">
+            <source src="Https://download1638.mediafire.com/lvvkq3s2xktg/v9gt4qfguqkvxul/5_6318838125908984328.mp4" type="video/mp4"></source>
+            <source src="Https://download1638.mediafire.com/lvvkq3s2xktg/v9gt4qfguqkvxul/5_6318838125908984328.mp4" type="video/ogg"></source>
+            <source src="Https://download1638.mediafire.com/lvvkq3s2xktg/v9gt4qfguqkvxul/5_6318838125908984328.mp4" type="video/mpeg"></source>
+            <source src="Https://download1638.mediafire.com/lvvkq3s2xktg/v9gt4qfguqkvxul/5_6318838125908984328.mp4" type="video/webm"></source>
+        </video>
+
+      <div class="video-post-text"> <!-- Post Body-->
+        <p> Bollywood Songs:- </p>
+        <p> Music: Tera Yaar hon mein </p>
+        <p> Director: Rahul </p><br>
+      </div><!-- End Post Body-->
+
+        <!-- Start Like & comment-->
+      <div class="reactors">
+        <div class="reactor-icon">
+          <img src='/fbicons/love.svg'  class="love-icon">
+            <img src='/fbicons/wow.svg'  class="wow-icon">
+            <img src='/fbicons/haha.svg'  class="haha-icon">
+        </div>
+        <span>364K</span>
+      </div>
+    <div class="post-footer">
+      <div class="btn-post like-btn"><img src='/fbicons/like.svg' class="like-icon"><span>364K</span></div>
+      <div class="btn-post comment-btn"><img src='/fbicons/comment.svg' class="comment-icon" ><span>64K</span></div>
+      <div class="btn-post share-btn"><img src='/fbicons/share.svg' class="share-icon"><span>15K</span></div>
+    </div>
+    <!-- End Like & comment-->
+    </div>
+  </div>
+  <!-- End fb-videos -->
+  </div> <!-- fb - full body-->
+
+  <!-- Start Fb-Menu-Bar-->
+  <div class="tabcontent fbbody" id="Fbmenubar">
+      <div class="menu-sidebar-header-fixed">
+          <div class="menu-sidebar-header">
+              <div class="left-arrow-menu svg tablinks"  onclick="openfbTab('Fbtimeline'),showHeader()">
+                  <img src='/fbicons/menu-arrow-left.svg' width="20px" height="20px" class="sidebar-icon">
+                  <span>Menu</span>
+              </div>
+              <div class="right-search">
+                  <img src='/fbicons/search.svg' width="25px" height="20px" class="sidebar-icon">
+              </div>
+          </div>
+      </div>
+      <div class="profile-menu-sidebar">
+          <img src="image/profile.jpg" alt="profile" width="35px" height="35px">
+          <span style="color:black"> Allu Arjun </span> <br>
+          <span > View Your Profile </span>
+      </div>
+      <div class="fb-menu-sidebar-function">
+          <div></div>
+          <div><img src='/fbicons/icon image/covid.png' class="sidebar-icon"> <span>COVID-19 information center</span></div>
+          <div><img src='/fbicons/icon image/live.jpeg' width="25px" height="15px"class="sidebar-icon-ex"> <span>Live Videos</span></div>
+          <div><img src='/fbicons/icon image/messanger.png' class="sidebar-icon"> <span>Messages</span></div>
+          <div><img src='/fbicons/icon image/group.png' class="sidebar-icon"> <span> Groups</span></div>
+          <div> <img src='/fbicons/icon image/marketplace.jpeg' width="20px" height="20px" class="sidebar-icon-ex"> <span> Marketplace</span></div>
+          <div><img src='/fbicons/icon image/friends.png' class="sidebar-icon"> <span>Friends</span></div>
+          <div><img src='/fbicons/icon image/video.png' class="sidebar-icon"> <span>Videos</span></div>
+          <div><img src='/fbicons/icon image/page.png' class="sidebar-icon"> <span>Pages</span></div>
+          <div><img src='/fbicons/icon image/saved.png' class="sidebar-icon"> <span>Saved</span></div>
+          <div><img src='/fbicons/icon image/memories.png' class="sidebar-icon"> <span>Memories</span></div>
+          <div><img src='/fbicons/icon image/event.png' class="sidebar-icon"> <span>Events</span></div>
+          <div><img src='/fbicons/icon image/game.png' class="sidebar-icon"> <span>Games</span></div>
+          <div><img src='/fbicons/icon image/climate.png' class="sidebar-icon"> <span>Climate Science Information Center</span></div>
+          <div><img src='/fbicons/icon image/jobs.png' class="sidebar-icon"> <span>Jobs</span></div>
+          <div><img src='/fbicons/icon image/ads-manager.png' class="sidebar-icon"> <span>Ads Manager</span></div>
+          <div><img src='/fbicons/icon image/blood-donation.png' class="sidebar-icon"> <span>Blood Donation</span></div>
+          <div><img src='/fbicons/icon image/most recent.png' class="sidebar-icon"> <span>Most Recent</span></div>
+          <div><img src='/fbicons/setting.svg' class="setting-sidebar-icon"> <span  class="side-menu-text">Settings</span></div>
+          <div><img src='/fbicons/dark-mode.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Dark Mode</span></div>
+          <div><img src='/fbicons/privacy.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Privacy shortcuts</span></div>
+          <div><img src='/fbicons/language.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Language</span></div>
+          <div><img src='/fbicons/data.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Data Usage</span></div>
+          <div><img src='/fbicons/clear.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Clear space</span></div>
+          <div><img src='/fbicons/help.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Help</span></div>
+          <div><img src='/fbicons/support.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Support Inbox</span></div>
+          <div><img src='/fbicons/about.svg' class="setting-sidebar-icon"> <span class="side-menu-text">About</span></div>
+          <div><img src='/fbicons/report.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Report a problem</span></div>
+          <div><img src='/fbicons/logout.svg' class="setting-sidebar-icon"> <span class="side-menu-text">Log Out</span></div>
+      </div>
+  </div>
+  <!-- End  Fb-Menu-Bar-->
+
+  <!-- Loading... -->
+  <div class="loading">
+    <img src="image/fblogo.png" alt="">
+    <p>Facebook</p>
+    <div class="loading-icons">
+      <img src="fbicons/logo.svg" alt="">
+      <img src="fbicons/messenger-dark.svg" alt="">
+      <img src="fbicons/instagram.svg" alt="">
+      <img src="fbicons/whatsapp.svg" alt="">
+      <img src="fbicons/link.svg" alt="">
+    </div>
+  </div>
+
+  <script>
+    window.onload = function(){
+      document.querySelector('.loading').style.display = "none";
+      document.querySelector('.Facebook-Full-Body').style.display = "block";
+    }
+    var facebookUsers = [{id:1, name:"Shahid Kapoor", image : "image/celiberity/shahid1.jpg", postImage:"image/celiberity/shahid2.jpg", date:"10 Oct 2020", postText1:"Have a nice day :)", postText2:"see you gys...", postText3:"", likes:"20k", comments:"5k", shares:"2k", reactors:"20K" },
+    {id:2, name:"Katrina Kaif", image : "image/celiberity/katrina1.jpg", postImage:"image/celiberity/katrina2.jpg", date:"01 Feb 2021", postText1:"Trust me, One day you will success :)", postText2:"god bless you", postText3:"", likes:"150k", comments:"2k", shares:"20k", reactors:"150K" },
+    {id:3, name:"Mark Zukerbarg", image : "image/celiberity/mark1.jpg", postImage:"image/celiberity/mark2.2.jpg", date:"01 Jan 2021", postText1:"Kano pretty awesome for teaching kid to code.", postText2:"fantastic", postText3:"", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:4, name:"Sololearn", image : "image/celiberity/solo1.png", postImage:"image/celiberity/post1.png", date:"10 Jan 2021", postText1:"We are excited to share that SoloLearn has won the 2021 EdTech Breakthrough annual awards program, taking home the “Best Computer Coding Education Solution” award! .", postText2:"EdTech Breakthrough performs the deepest evaluations of the global educational technology industry each year to recognize and highlight the “breakthrough” EdTech companies. And with over 2,000 nominations coming this year from all over the world, SoloLearn is one of the selected “breakthrough” winners!", postText3:"https://edtechbreakthrough.com/2021-winners/", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:1, name:"Shahid Kapoor", image : "image/celiberity/shahid1.jpg", postImage:"image/celiberity/shahid2.jpg", date:"10 Oct 2020", postText1:"Have a nice day :)", postText2:"see you gys...", postText3:"", likes:"20k", comments:"5k", shares:"2k", reactors:"20K" },
+    {id:2, name:"Katrina Kaif", image : "image/celiberity/katrina1.jpg", postImage:"image/celiberity/katrina2.jpg", date:"01 Feb 2021", postText1:"Trust me, One day you will success :)", postText2:"god bless you", postText3:"", likes:"150k", comments:"2k", shares:"20k", reactors:"150K" },
+    {id:3, name:"Mark Zukerbarg", image : "image/celiberity/mark1.jpg", postImage:"image/celiberity/mark2.2.jpg", date:"01 Jan 2021", postText1:"Kano pretty awesome for teaching kid to code.", postText2:"fantastic", postText3:"", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:4, name:"Sololearn", image : "image/celiberity/solo1.png", postImage:"image/celiberity/post1.png", date:"10 Jan 2021", postText1:"We are excited to share that SoloLearn has won the 2021 EdTech Breakthrough annual awards program, taking home the “Best Computer Coding Education Solution” award! .", postText2:"EdTech Breakthrough performs the deepest evaluations of the global educational technology industry each year to recognize and highlight the “breakthrough” EdTech companies. And with over 2,000 nominations coming this year from all over the world, SoloLearn is one of the selected “breakthrough” winners!", postText3:"https://edtechbreakthrough.com/2021-winners/", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:1, name:"Shahid Kapoor", image : "image/celiberity/shahid1.jpg", postImage:"image/celiberity/shahid2.jpg", date:"10 Oct 2020", postText1:"Have a nice day :)", postText2:"see you gys...", postText3:"", likes:"20k", comments:"5k", shares:"2k", reactors:"20K" },
+    {id:2, name:"Katrina Kaif", image : "image/celiberity/katrina1.jpg", postImage:"image/celiberity/katrina2.jpg", date:"01 Feb 2021", postText1:"Trust me, One day you will success :)", postText2:"god bless you", postText3:"", likes:"150k", comments:"2k", shares:"20k", reactors:"150K" },
+    {id:3, name:"Mark Zukerbarg", image : "image/celiberity/mark1.jpg", postImage:"image/celiberity/mark2.2.jpg", date:"01 Jan 2021", postText1:"Kano pretty awesome for teaching kid to code.", postText2:"fantastic", postText3:"", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:4, name:"Sololearn", image : "image/celiberity/solo1.png", postImage:"image/celiberity/post1.png", date:"10 Jan 2021", postText1:"We are excited to share that SoloLearn has won the 2021 EdTech Breakthrough annual awards program, taking home the “Best Computer Coding Education Solution” award! .", postText2:"EdTech Breakthrough performs the deepest evaluations of the global educational technology industry each year to recognize and highlight the “breakthrough” EdTech companies. And with over 2,000 nominations coming this year from all over the world, SoloLearn is one of the selected “breakthrough” winners!", postText3:"https://edtechbreakthrough.com/2021-winners/", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:1, name:"Shahid Kapoor", image : "image/celiberity/shahid1.jpg", postImage:"image/celiberity/shahid2.jpg", date:"10 Oct 2020", postText1:"Have a nice day :)", postText2:"see you gys...", postText3:"", likes:"20k", comments:"5k", shares:"2k", reactors:"20K" },
+    {id:2, name:"Katrina Kaif", image : "image/celiberity/katrina1.jpg", postImage:"image/celiberity/katrina2.jpg", date:"01 Feb 2021", postText1:"Trust me, One day you will success :)", postText2:"god bless you", postText3:"", likes:"150k", comments:"2k", shares:"20k", reactors:"150K" },
+    {id:3, name:"Mark Zukerbarg", image : "image/celiberity/mark1.jpg", postImage:"image/celiberity/mark2.2.jpg", date:"01 Jan 2021", postText1:"Kano pretty awesome for teaching kid to code.", postText2:"fantastic", postText3:"", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:4, name:"Sololearn", image : "image/celiberity/solo1.png", postImage:"image/celiberity/post1.png", date:"10 Jan 2021", postText1:"We are excited to share that SoloLearn has won the 2021 EdTech Breakthrough annual awards program, taking home the “Best Computer Coding Education Solution” award! .", postText2:"EdTech Breakthrough performs the deepest evaluations of the global educational technology industry each year to recognize and highlight the “breakthrough” EdTech companies. And with over 2,000 nominations coming this year from all over the world, SoloLearn is one of the selected “breakthrough” winners!", postText3:"https://edtechbreakthrough.com/2021-winners/", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:1, name:"Shahid Kapoor", image : "image/celiberity/shahid1.jpg", postImage:"image/celiberity/shahid2.jpg", date:"10 Oct 2020", postText1:"Have a nice day :)", postText2:"see you gys...", postText3:"", likes:"20k", comments:"5k", shares:"2k", reactors:"20K" },
+    {id:2, name:"Katrina Kaif", image : "image/celiberity/katrina1.jpg", postImage:"image/celiberity/katrina2.jpg", date:"01 Feb 2021", postText1:"Trust me, One day you will success :)", postText2:"god bless you", postText3:"", likes:"150k", comments:"2k", shares:"20k", reactors:"150K" },
+    {id:3, name:"Mark Zukerbarg", image : "image/celiberity/mark1.jpg", postImage:"image/celiberity/mark2.2.jpg", date:"01 Jan 2021", postText1:"Kano pretty awesome for teaching kid to code.", postText2:"fantastic", postText3:"", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:4, name:"Sololearn", image : "image/celiberity/solo1.png", postImage:"image/celiberity/post1.png", date:"10 Jan 2021", postText1:"We are excited to share that SoloLearn has won the 2021 EdTech Breakthrough annual awards program, taking home the “Best Computer Coding Education Solution” award! .", postText2:"EdTech Breakthrough performs the deepest evaluations of the global educational technology industry each year to recognize and highlight the “breakthrough” EdTech companies. And with over 2,000 nominations coming this year from all over the world, SoloLearn is one of the selected “breakthrough” winners!", postText3:"https://edtechbreakthrough.com/2021-winners/", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:1, name:"Shahid Kapoor", image : "image/celiberity/shahid1.jpg", postImage:"image/celiberity/shahid2.jpg", date:"10 Oct 2020", postText1:"Have a nice day :)", postText2:"see you gys...", postText3:"", likes:"20k", comments:"5k", shares:"2k", reactors:"20K" },
+    {id:2, name:"Katrina Kaif", image : "image/celiberity/katrina1.jpg", postImage:"image/celiberity/katrina2.jpg", date:"01 Feb 2021", postText1:"Trust me, One day you will success :)", postText2:"god bless you", postText3:"", likes:"150k", comments:"2k", shares:"20k", reactors:"150K" },
+    {id:3, name:"Mark Zukerbarg", image : "image/celiberity/mark1.jpg", postImage:"image/celiberity/mark2.2.jpg", date:"01 Jan 2021", postText1:"Kano pretty awesome for teaching kid to code.", postText2:"fantastic", postText3:"", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+    {id:4, name:"Sololearn", image : "image/celiberity/solo1.png", postImage:"image/celiberity/post1.png", date:"10 Jan 2021", postText1:"We are excited to share that SoloLearn has won the 2021 EdTech Breakthrough annual awards program, taking home the “Best Computer Coding Education Solution” award! .", postText2:"EdTech Breakthrough performs the deepest evaluations of the global educational technology industry each year to recognize and highlight the “breakthrough” EdTech companies. And with over 2,000 nominations coming this year from all over the world, SoloLearn is one of the selected “breakthrough” winners!", postText3:"https://edtechbreakthrough.com/2021-winners/", likes:"200k", comments:"50k", shares:"25k", reactors:"200K" },
+      ];
+    facebookUsers.forEach(function(obj){
+      // let id = obj.id;
+      let name = obj.name;
+      let image = obj.image;
+      let postImage = obj.postImage;
+      let date = obj.date;
+      let postText1 = obj.postText1;
+      let postText2 = obj.postText2;
+      let postText3 = obj.postText3;
+      let likes = obj.likes;
+      let comments  = obj.comments;
+      let shares = obj.shares;
+      document.querySelector(".timeline-post").innerHTML += '<div class="timeline-post"> <div class="post1"> <div class="profile-post-name"> <img src="'+image+'" width="45px" height="45px" class="post-profile"> <strong class="profile-name"> '+name+' </strong> <span style="position:relative; top:-12px;right:102px;color:rgb(136, 125, 111);"> <small class="post-date" >'+date+' </small> <span style="position: relative;top:-4px;">.</span> <img src="/fbicons/earth.svg" width="12px" height="12px" class="earth-icon" style="position: relative; top:2px;"> </span> </div> <div class="post-menu"> <img src="/fbicons/three-dot.svg" width="20px" height="20px" class="three-dot" style="position: relative; top:6px; right:5px;"> </div> </div> <div class="post-text"> <p>'+postText1+'</p> <p> '+postText2+' </p> <p> '+postText3+' </p><br> </div> <div class="post-image"> <img src="'+postImage+'" alt="post1" width="100%"> </div> <div class="reactors"> <div class="reactor-icon"> <img src="/fbicons/love.svg"  class="love-icon"> <img src="/fbicons/wow.svg"  class="wow-icon"> <img src="/fbicons/haha.svg"  class="haha-icon"> </div> <span>364K</span> </div> <div class="post-footer"> <div class="btn-post like-btn"><img src="/fbicons/like.svg" class="like-icon"><span>'+likes+'</span></div> <div class="btn-post comment-btn"><img src="/fbicons/comment.svg" class="comment-icon" ><span>'+comments+'</span></div> <div class="btn-post share-btn"><img src="/fbicons/share.svg" class="share-icon"><span>'+shares+'</span></div> </div> </div>';
+    })
+    function openfbTab(Fbtab) {
+      var j, tabcontent;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (j = 0; j < tabcontent.length; j++) {
+        tabcontent[j].style.display = "none";
+      }
+      document.getElementById(Fbtab).style.display = "block";
+    }
+   function hideHeader(){
+     document.querySelector('.Facebook-Full-Body').style.display = "none";
+   }
+   function showHeader(){
+     document.querySelector('.Facebook-Full-Body').style.display = "block";
+   }
+  </script>
+</body>
+</html>

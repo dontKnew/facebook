@@ -1,0 +1,1086 @@
+
+:root {
+    --backgroundbrown : #F0F2F5;
+    --black : #050505;
+    --textbrown:#65676B;
+    --frbrown : #E4E6EB;
+    --blue : #1877F2;
+    --red : #F0284A;
+    --badgered:#FA383E;
+    --chery:#F35369;
+}
+::-webkit-scrollbar{
+    width:0;
+    height:0;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: yellowgreen;
+}
+html{
+    overflow: hidden;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0px;
+    color:var(--black);
+}
+
+.Facebook-Full-Body{
+    display: none;
+    background-color:var(--backgroundbrown);
+}
+.header {
+    background-color:#fff;
+    width:100%;
+    height:auto;
+    border: 0.2px solid rgba(136, 125, 111,0.2);
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    overflow:hidden; 
+    position:fixed;
+    top:0;
+    z-index:5;
+}
+.sub-header{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-header > .bar-search{
+    position: relative;
+    right:10px;
+    top:10px;
+}
+.bar-search > .search{
+    border-radius: 80%;
+    padding:4px 5px 5px 6px;
+    background-color:var(--backgroundbrown);
+    position: relative;
+    right:4px;
+} 
+.header-icon{
+    display: flex;
+    justify-content:space-around; 
+    padding:10px 10px 10px 0px;/*left bottom not work */
+    overflow:hidden;
+    background-color: white;
+}
+.header > img{
+    pointer-events: none;
+}
+.header-sticky {
+    position: fixed;
+    top:0;
+}
+/* start for make clickable header svg */
+div.svg {
+  position: relative;
+  display: inline-block; 
+}
+div.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+/* end for make clickable header svg */
+#Fbtimeline{
+    display: block;
+}
+.timeline-header{
+    margin-top: 101px; 
+    background-color: white;
+    width:100%;
+    height: 56px;
+}
+.timeline-header > .timeline-image{
+    border-radius:100%;
+    margin-top:3px;
+    position: absolute;
+    left:3px;
+    transform: rotate(-15deg);
+}
+.timeline-header > span{
+    color:var(--textbrown);
+    position: relative;
+    left:60px;
+    top:10px;
+}
+.timeline-header > .image-icon{
+    float:right;    
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(175, 164, 150);
+    border-right:none;
+    border-bottom:none;
+    border-top:none;
+    padding:8px;
+    margin-top:-15px;
+}
+ .timeline-header > .active-badge{
+    width: 10px;
+    height:10px;
+    border:2px solid white;
+    background-color:rgb(15, 204, 15);
+    z-index:3;
+    border-radius:100%;
+    position:absolute;
+    top:135px;
+    left:40px;
+}
+.timeline-footer{
+    border: 0.2px solid rgba(136, 125, 111,0.1);
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    width: 100%;
+    height:auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-icon > img{
+    font-size:40px;
+}
+.timeline-footer > div{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.timeline-footer > div > img{
+    position: relative;
+    top:2px;
+}
+.footer-icon{
+    color:var(--black);
+    position:relative;
+    top:-5px;
+    font-size:16px;
+}
+.stories{
+    margin-top:5px;
+    width: 100%;
+    height:auto;
+    background-color: white;
+}
+.stories-header{
+    display:flex;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+}
+.stories-footer{
+    display:flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    max-height:auto;
+    margin:auto;
+}
+.stories-footer>div{
+    margin:8px;
+}
+.add-story{
+    width: 85px;
+    height: 100px;
+    border:2px solid rgb(175, 164, 150);
+}
+
+.btn-all-stories{
+    display: none;
+    height: 30px;
+    background-color:rgba(200, 200, 252, 0.973);
+    border-radius: 10px;
+    padding-left:50px;
+    padding-right:50px;
+    position: relative;
+    bottom:10px;
+}
+.btn-all-stories > div{
+    text-align:center;
+    padding-top:3px;
+    padding-bottom:10px;
+    font-weight: bolder;
+    position: relative;
+    top:2px;
+}
+.btn-all-stories > div > span{
+    color:blue;
+}
+div > .stroies-image {
+    border-radius:8px;
+}
+
+.stories:hover .btn-all-stories{
+    display:block;
+
+}
+.timeline-post{
+    background-color: white;
+    margin-top:5px;
+    height: auto;
+    margin-bottom:10px;
+}
+.post1{
+    display:flex;
+    justify-content: space-between;
+}
+.post-profile{
+    border-radius: 100%;
+    margin:5px;
+}
+.profile-name{
+    position: relative;
+    top:-30px;
+}
+.reactor-icon{
+    position:relative;
+    left:10px;
+    top:25px;
+}
+.reactor-icon > .love-icon{
+    z-index: 2;
+}
+.reactor-icon > img{
+    width: 17px;
+    height: 17px;
+}
+.reactor-icon >.haha-icon{
+    position: relative;
+    left:-10px;
+}
+.reactor-icon >.wow-icon{
+    position: relative;
+    left:-4px;
+}
+.reactors > span {
+    color:var(--textbrown);
+    margin-left:60px;
+}
+.post-footer{
+    display:flex;
+    justify-content: space-evenly;
+    padding:5px;
+    margin-top:4px;
+}
+.post-footer > .btn-post{
+    background-color:var(--backgroundbrown);
+    border-radius: 20px;
+    padding:1% 10% 3% 10%;
+    text-align:center;
+    position: relative;
+}
+.post-footer > div > img{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top:6px;
+    right:4px;
+}
+.post-text > p {
+    margin:10px;
+    position: relative;
+    top:10px;
+}
+.friend-request{
+    /*margin-top:80px;
+    width: 100%;
+    height: auto;
+    background-color: white;*/
+    border: 0.2px solid rgba(136, 125, 111,0.5);
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    background-color: #fff;
+}
+
+.sug-all-fr{
+    display:flex;
+}
+.sug-all-fr > .btn-fr{
+    margin-top:40px;
+    background-color:var(--backgroundbrown);
+    border-radius: 20px;
+    text-align:center;
+    color:var(--black);
+    font-weight:bold;
+}
+.friend-box{
+    padding-left:5px;
+    clear:both; 
+}
+.fr-request > span{
+    padding:10px;
+    position: relative; 
+    top:22px;  
+    color:var(--black); 
+}
+div .fr-image{
+    border-radius:100%;
+    margin-top:27px;
+    float:left;
+}
+
+div .fr-time{
+    color:var(--textbrown);
+    position: relative;
+    right:5px;
+    top:24px;
+}
+div .fr-name{
+    position: relative;
+    top:20px;
+    left:5px;
+    color:var(--black);
+}
+.fr-name-time{
+    display: flex;
+    justify-content:space-between;
+    position:relative;
+    top:12px;
+    padding:5px;
+}
+.fr-confirm-btn, .fr-add-btn{
+    background-color:var(--blue);
+    color:white;
+    border-radius:5px;
+    width: 150px;
+    height: 30px;
+    font-weight:bolder;
+    border: 2px solid var(--blue);
+    position: relative;
+    right:5px;
+}
+.see-all-btn{
+    background-color:var(--backgroundbrown);
+    color:var(--black);
+    border-radius:5px;
+    width: 100%;
+    height: 30px;
+    font-weight:bolder;
+    border: 2px solid #E4E6EB;
+}
+.fr-rq-footer{
+    margin:10px;
+    padding-top:12px;
+}
+
+.fr-delete-btn, .fr-remove-btn{
+    background-color:var(--frbrown);
+    color:var(--black);
+    border-radius:5px;
+    width: 150px;
+    height: 30px;
+    font-weight:bolder;
+    border: 2px solid #E4E6EB;
+}
+.fr-rq-btn{
+    margin-top:30px;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+}
+.fr-text > p{
+    border: 0.2px solid #d8d8dd;
+    border-right:none;
+    border-left:none;
+    color:black;
+    font-weight:bold;
+    text-align:center;
+    padding:10px;
+}
+div.message-header{
+    margin-top:130px;
+    width: 100%;
+    height: auto;
+    height: auto;
+}
+.message-header > .chat-profile-header{
+    display:flex;
+    justify-content: space-between;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    background-color: white;
+    border:2.5px solid rgb(231, 234, 235);
+    border-left:none;
+    border-top:none;
+    border-right:none;
+}
+.add-story{
+    width: 85px;
+    height: 100px;
+    border:2px solid rgb(175, 164, 150);
+}
+div > .chat-profile-image {
+    border-radius:100%;
+    padding:6px;
+}
+div > .chat-profile-name {
+    position: relative;
+    bottom:8px;
+    left:13px;
+    font-size:12px;
+    color:var(--black);
+}
+.message-body{
+    height:auto;
+    width:100%;
+    background-color: white;
+    margin-bottom:60px;
+}
+div > .chat-profile-image1 {
+    border-radius:100%;
+    padding:6px;
+    float:left;
+}
+.message-body > .time-badge{
+    border:1px solid white;
+}
+.time-badge > span{
+    width: auto;
+    height: auto;
+    border:1px solid white;
+    color:rgb(15, 216, 15);
+    font-weight: bolder;
+    font-size:12px;
+    border:3px solid white;
+    border-radius: 50%;
+    padding:2px;
+    background-color: var(--backgroundbrown);
+    position: relative;
+    top:-4px;
+    right:22px;
+}
+.chat-front > .chat-profile-name1, .chat-profile-message{
+    position: relative;
+    top:10px;
+    font-size:13px;
+    margin-left:8px;
+    color:var(--black);
+}
+.chat-front > .chat-profile-message{
+    color:var(--textbrown);
+    font-size:13px;
+}
+
+/* Remove Css Fb Login */
+
+.fb-group{
+    margin-top:100px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+div > .group-header{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size:25px;
+    position: relative;
+    top:8px;
+    padding:0px 5px 0px 10px;
+}
+.group-header > span {
+    color:var(--black);
+}
+div > .group-header-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    border: 0.2px solid rgba(172, 158, 141, 0.644);
+    border-left:none;
+    border-top:none;
+    border-right:none;
+}
+.group-header-menu > h4{
+    font-weight:normal;
+    color:var(--textbrown);
+}
+.group-header-menu > h4:hover {
+    color:var(--blue);
+}
+/* I will do it later..
+.group-header-menu-line > div{
+    padding:2px;
+}
+.group-menu-line{
+    width: 100px;
+    height: 2px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+} */
+.group-list{
+    height: auto;
+    /* background-color: white; */
+    border: 0.2px solid rgba(206, 203, 200, 0.849);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    position: relative;
+    bottom:20px;
+}
+.group-list > h3{
+    padding: 0 0 0 8px;
+    position: relative;
+    top:8px;
+}
+.group-list > .group1{
+    display: flex;
+    border: 0.2px solid rgba(206, 203, 200, 0.849);
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    padding: 7px 0 6px 10px;
+}
+.group1 > .group-name-text{
+  padding:0px 0px 0px 5px;
+  margin-top:-3px;
+}
+.group-name-text > span:last-child{
+    font-size:13px;
+    color:var(--black);
+}
+.group-name-text > span:first-child{
+    font-weight:bolder;
+    color:var(--black);
+}
+.group-see-more-btn > span {
+    color:var(--blue);
+    border-radius:5px;
+    width: 100%;
+    height: 30px;
+    font-weight:bolder;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom:10px;
+    /* font-weight:lighter; use later */
+}
+.group-section-post{
+    margin-top:5px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.group-post1{
+    display:flex;
+    justify-content: space-between;
+}
+.group-profile-post{
+    border-radius: 100%;
+    margin:5px;
+    float:left;
+}
+.group-profile-name{
+    position: relative;
+    top:7px;
+    left:2px;
+}
+.group-profile-post-name > span{
+    position: relative;
+    top:5px;
+    color:var(--black);
+}
+.group-profile-post-name > strong > span {
+    position: relative;
+    top:0.5px;
+    right:16px;
+    color:var(--black);
+}
+.group-post-date{
+    position: relative;
+    top:2px;
+    color:var(--textbrown);
+}
+.group-post-menu{
+    padding-right:60px;
+}
+.group-reactor-icon{
+    position:relative;
+    left:10px;
+    top:25px;
+}
+.group-reactor-icon > .love-icon{
+    z-index: 2;
+}
+.group-reactor-icon > img{
+    width: 17px;
+    height: 17px;
+}
+.group-reactor-icon >.haha-icon{
+    position: relative;
+    left:-10px;
+}
+.group-reactor-icon >.wow-icon{
+    position: relative;
+    left:-4px;
+}
+.group-reactors > span {
+    color:var(--textbrown);
+    margin-left:60px;
+}
+.group-post-footer{
+    display:flex;
+    justify-content: space-evenly;
+    padding:5px;
+    margin-top:4px;
+}
+.group-post-footer > .btn-post{
+    background-color:var(--backgroundbrown);
+    border-radius: 20px;
+    padding:1% 10% 3% 10%;
+    text-align:center;
+    position: relative;
+}
+.group-post-footer > div > img{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top:6px;
+    right:4px;
+}
+.group-post-text{
+    margin:20px 0px -15px 0px;
+}
+.group-post-text > p {
+    margin:5px;
+}
+
+.fb-notification{
+    margin-top:93px;
+    width: 100%;
+    height: auto;
+}
+div > .notification-header{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size:25px;
+    position: relative;
+    top:8px;
+    padding:5px 5px 5px 10px;
+    background-color: white;
+}
+.mark-all-read{
+    background-color:#fff;
+    color:var(--blue);
+    width: 100%;
+    height: 30px;
+    font-weight:bolder;
+    border: 2px solid #E4E6EB;
+}
+.notification-sub-header{
+    margin:15px 6px 6px 6px;
+}
+.fb-notification-body{
+    background-color: #fff;
+}
+.notification-body{
+    margin:0px 6px 6px 6px;
+    border: 0.2px solid rgba(136, 125, 111,0.5);
+    border-left:none;
+    border-right:none;
+    border-top:none;
+}
+.header-text-new{
+    padding:6px 6px 6px 6px;
+    border: 0.2px solid rgba(136, 125, 111,0.5);
+    border-left: none;
+    border-right:none;
+    border-top:none;
+}
+.header-text-new > strong{
+    font-size:18px;
+}
+.notification-items {
+  display: flex;
+  flex-direction:row;
+  padding:5px 0 5px 0;  
+}
+.notification-items > div {
+  padding:0px 0px 0px 0px;
+}
+div > .notification-image > img{
+    border-radius:50px;
+}
+.notification-items > div:nth-child(2) {
+    background: #fff;
+    width:100%;
+    padding:5px 0px 5px 5px;
+}
+.notification-items > div > img,span{
+    position: relative;
+    top:5px;
+    color:var(--textbrown);
+    margin-right:5px;
+}
+.notification-items > div >span{
+    color:var(--textbrown);
+}
+
+.notification-three-dot > img{
+    transform: rotate(90deg);
+    position: relative;
+    left:10px;
+}
+.fb-video{
+    margin-top:93px;
+    width: 100%;
+    height: auto;
+}
+div > .video-header{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size:25px;
+    position: relative;
+    top:8px;
+    padding:5px 5px 5px 10px;
+    background-color: white;
+}
+div > .video-header > span{
+    margin-top:4px;
+    color:var(--black); 
+}
+
+div > .video-header > span > img{
+    border-radius: 80%;
+    padding:3px;
+    background-color:var(--backgroundbrown);
+    position:relative;
+    right:10px;
+    top:-5px;
+}
+div > .video-header1 > span{
+    color:var(--black); 
+}
+div > .video-header1{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    padding:5px 0px 5px 10px;
+}
+/* toggle switch */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+} 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    background-color: #c6cacfc7;
+    width:40px;
+    height: 18px;
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: -3px;
+    top: -3px;
+    border-radius: 50%;
+    background-color: #aaafb8c4;
+    -webkit-transition: .4s;
+    transition: .30s;
+}
+input:checked + .slider {
+    background-color: #7cb8e9ec;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px); 
+    transform: translateX(22px);
+    background-color:var(--blue);
+}
+.video-menu-header{
+    margin-top:5px;
+    background-color: white;
+    padding:15px 0 15px 0px;
+}
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    padding-left:8px;
+}
+.menu-header > div{
+    background-color:(var(--backgroundbrown));
+    color:var(--black);
+    border-radius:20px;
+    font-weight:bolder;
+    margin-right:14px;
+    padding:10px 15px 10px 15px;
+}
+
+.video-section-post{
+    margin-top:0.5px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.video-post1{
+    display:flex;
+    justify-content: space-between;
+}
+.video-profile-post{
+    border-radius: 100%;
+    margin:5px;
+    float:left;
+}
+.video-profile-name{
+    position: relative;
+    top:8px;
+    left:2px;
+}
+.video-profile-name > span {   
+    position: relative;
+    top:2px;
+}
+.video-post-date{
+    position: relative;
+    top:4px;
+}
+.video-post-menu{
+    padding-right:60px;
+}
+
+.video-reactors {
+    margin-left:4px;
+}
+.video-reactors > span {
+    color:rgb(136, 125, 111);
+    font-size:15px;
+}
+
+.video-post-footer{
+    margin-top:3px;
+    display:flex;
+    justify-content: space-evenly;
+    padding:5px;
+}
+.video-post-footer > .video-btn-post{
+    background-color:var(--backgroundbrown);
+    border-radius: 20px;
+    padding:2% 10% 2% 10%;
+    text-align:center;
+}
+.video-post-text{
+    margin:10px 0px -15px 0px;
+}
+.video-post-text > p {
+    margin:5px;
+}
+/*  Start Tab Content  */
+.tabcontent {
+    display: none;
+}
+.header-icon > div.active  { 
+  background-color: #ccc;/*change color blue : not work at svg*/
+}
+
+/* Start facebook loader */
+.fb-loading{
+    position: fixed;
+    left:50%;
+    top:55%;
+    transform: translate(-50%,-50%);
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    padding:12px 5px 2px 14px;
+    border-radius: 50%;
+    background-color:#ffffff;
+    box-shadow:2px 2px 5px rgb(228, 225, 225), -2px -2px 5px rgb(228, 225, 225); 
+    position: relative;
+    left:20px;
+    bottom:15px;
+}
+div.circle{
+     height:8px;
+     width:8px;
+     border-radius:50%;
+     background-color:rgb(228, 225, 225);
+     display:inline-block;
+}
+ div.cir1{
+     animation:bg1 20s linear infinite;
+ }
+  @keyframes bg1{
+     0% {background-color:rgb(228, 225, 225);}
+     10%{background-color:#536b9e;}
+ }
+ div.cir2{
+     animation:bg2 20s linear infinite;
+ }
+  @keyframes bg2{
+     20% {background-color:rgb(228, 225, 225);}
+     30%{background-color:#536b9e;}
+ }
+ div.cir3{
+     animation:bg3 20s linear infinite;
+ }
+  @keyframes bg3{
+     40% {background-color:rgb(228, 225, 225);}
+     50%{background-color:#536b9e;}
+ }
+ div.cir4{
+     animation:bg4 20s linear infinite;
+ }
+  @keyframes bg4{
+     50% {background-color:rgb(228, 225, 225);}
+     60%{background-color:#536b9e;}
+ }
+ div.cir5{
+     animation:bg5 20s linear infinite;
+ }
+  @keyframes bg5{
+     70% {background-color:rgb(228, 225, 225);}
+     80%{background-color:#536b9e;}
+ }
+/* Menu Bar */
+.menu-sidebar-header{
+    background-color: white;
+    width: 100%;
+    border: 0.2px solid rgba(136, 125, 111,0.5); */
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding:8px;
+    z-index: 2;
+    position: fixed;
+    top:0px
+}
+.left-arrow-menu > span {
+    color:black;
+    position: relative;
+    top:-5px;
+    font-weight: bolder;
+}
+.right-search > img{
+    border-radius: 80%;
+    padding:3px;
+    background-color:var(--backgroundbrown);
+    float:right;
+}
+.right-search {
+    padding-right:20px;
+    margin-top:-3px;
+}
+.profile-menu-sidebar{
+    margin-top:40px;
+    border: 0.2px solid rgba(136, 125, 111,0.5); 
+    border-left:none;
+    border-right:none;
+    padding:5px;
+}
+.profile-menu-sidebar >img{
+    border-radius: 100%;
+    border: 0.2px solid rgba(136, 125, 111,0.5);
+    float:left; 
+}
+.profile-menu-sidebar> span {
+    position: relative;
+    top:0;
+    left:8px;
+} 
+.fb-menu-sidebar-function{
+    clear:both;
+    display: flex;
+    flex-direction: column;
+    padding:0px 10px 10px 10px;
+    align-items:flex-start;
+}
+.fb-menu-sidebar-function > div{
+    /* margin:10px 0px 0px 0px;     */
+    line-height: 35px;
+}
+.fb-menu-sidebar-function > div > span {
+    color:var(--textbrown);
+}
+.fb-menu-sidebar-function > div > .sidebar-icon {
+    position: relative;
+    top:10px;
+    padding-right:5px;
+    width: 25px;
+    height: 25px;
+}
+.fb-menu-sidebar-function > div > .sidebar-icon-ex{
+    position: relative;
+    top:10px;
+    padding:0px 5px 2px 4px;
+}
+.fb-menu-sidebar-function > div > .setting-sidebar-icon{
+    position: relative;
+    top:4px;
+    width:20px;
+    height:20px;
+    padding: 5px;
+}
+div> span.side-menu-text {
+    position: relative;
+    top:-5px;
+}
+/* path.path-svg {
+    fill:none;
+    path:#65676B";
+} */
+/* loading */
+.loading > img  {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.loading > div {
+    display: flex;
+    position: absolute;
+    bottom:50px;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.loading > div > img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0 6px;
+}
+.loading > p{
+    color:#65676B;
+    text-align: center;
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 55px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-left: 2px;
+}
